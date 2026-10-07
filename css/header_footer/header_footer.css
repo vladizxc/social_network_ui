@@ -53,10 +53,12 @@ header .left form input[type="submit"]{
     background: url(/images/header_footer/icon_search.png) no-repeat; 
     background-size: cover;
     border: none;
+    cursor: pointer;
 }
 
 header .left form input[type="text"] {
     background: var(--border);
+    color: var(--text-secondary);
     padding: 10px 10px;
     border: none;
     width: 100%;

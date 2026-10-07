@@ -3,6 +3,13 @@ main {
     height: 90vh;
 }
 
+.block1 {
+    justify-content: left;
+    align-items: flex-start;
+}
+
+
+
 .left .profile {
     background-color: var(--surface);
     margin: 20px;
@@ -64,3 +71,76 @@ main {
     margin: 20px 0;
 }
 
+.middle .new-post {
+    background-color: var(--surface);
+    border-radius: 30px;
+    margin: 20px;
+}
+
+.middle .new-post > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.user-picture {
+    padding-left: 12px;
+    padding-top: 20px;
+}
+
+.user-picture img {
+    width: 50px;
+    border-radius: 30px;
+}
+
+.new-post form {
+    margin: 10px;
+}
+
+.new-post form .d-flex{
+    padding: 15px 15px;
+    border: 1px solid var(--border);
+    border-radius: 50px;
+    width: 500px;
+    background-color: var(--border);
+}
+
+.new-post form input[type="text"]{
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    width: 100%;
+}
+
+.new-post form input[type="submit"]{
+    width: 19px;
+    height: 19px;
+    background: url(/images/main/send_icon.png) no-repeat; 
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+}
+
+.new-post form > div {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input#file-upload[type="file"] {
+    display: none;
+}
+.file-upload {    
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.new-post form select{
+    border: 1px solid var(--border);
+    background: var(--background);
+    border-radius: 20px;
+    color: var(--text-secondary);
+    padding: 8px;
+}

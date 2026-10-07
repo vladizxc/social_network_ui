@@ -43,7 +43,8 @@
     </header>
     <main class="container-fluid">
         <div class="container">
-            <div class="left d-flex">
+            <div class="block1 d-flex">
+                <div class="left">
                 <div class="profile">
                     <div>
                         <figure>
@@ -71,6 +72,36 @@
                     </div>
                 </div>
             </div>
+            <div class="middle">
+                <div class="new-post">
+                    <div>
+                        <div class="user-picture">
+                            <img src="/images/header_footer/profile_logo.png" alt="">
+                        </div>
+                        <form name="post" action="new_post" method="post">
+                            <div class="d-flex">
+                                <input name="post" type="text" placeholder="Share something...">
+                                <input name="post" type="submit" value="">
+                            </div>
+                            
+                            <div>
+                                <label for="file-upload" class="file-upload">
+	                                <span><img src="/images/main/img_icon.png" alt="" width="20px"></span>
+                                    </label>
+                                    <input id="file-upload" type="file"/>
+                                <select name="publicity">
+                                    <option value="0">Public</option>
+                                    <option value="1">Only Followers</option>
+                                    <option value="2">Private</option>
+                                </select>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            
         </div>
     </main>
     <footer>
