@@ -25,20 +25,7 @@ body {
     font-size: 16px;
 }
 
-header > .container{
-    padding: 20px 40px;
-}
-
-header .logo img {
-    width: 150px;
-}
-
-header .account_logo img {
-    width: 70px;
-    border-radius: 50px;
-}
-
-header .left form input[type="text"] {
-    background: none;
-    padding: 10px 20px;
+main {
+    background-color: var(--background);
+    height: 90vh;
 }
