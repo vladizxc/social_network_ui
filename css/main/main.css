@@ -1,6 +1,5 @@
 main {
     background-color: var(--background);
-    height: 90vh;
 }
 
 .block1 {
@@ -59,6 +58,9 @@ main {
 .boxes .box {
     text-align: center;
     margin: 0 20px; 
+    cursor: pointer;
+    min-width: 70px;
+    padding: 2px;
 }
 
 .left .profile button {
@@ -68,7 +70,13 @@ main {
     border-radius: 20px;
     color: var(--primary-light);
     border: none;
-    margin: 20px 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.left .profile button:hover{
+    background-color: var(--primary-hover);
+    transition: 0.3s all ease;
 }
 
 .middle .new-post {
@@ -91,16 +99,19 @@ main {
 }
 
 .user-picture img, 
-.posts .post .post-author img{
+.posts .post .post-author img,
+.post .comment img{
     width: 50px;
     border-radius: 30px;
 }
 
-.new-post form {
+.new-post form,
+.comment form {
     margin: 10px;
 }
 
-.new-post form .d-flex{
+.new-post form .d-flex,
+.comment form .d-flex{
     padding: 15px 15px;
     border: 1px solid var(--border);
     border-radius: 50px;
@@ -108,14 +119,16 @@ main {
     background-color: var(--border);
 }
 
-.new-post form input[type="text"]{
+.new-post form input[type="text"],
+.comment form input[type="text"]{
     background: none;
     border: none;
     color: var(--text-secondary);
     width: 100%;
 }
 
-.new-post form input[type="submit"]{
+.new-post form input[type="submit"],
+.comment form input[type="submit"]{
     width: 19px;
     height: 19px;
     background: url(/images/main/send_icon.png) no-repeat; 
@@ -156,7 +169,7 @@ input#file-upload[type="file"] {
 }
 
 .middle .filter hr {
-    width: 430px;
+    width: 405px;
     border-color: var(--background);
 }
 
@@ -180,7 +193,7 @@ input#file-upload[type="file"] {
 .middle .posts .post {
     background-color: var(--surface);
     border-radius: 30px;
-    margin: 20px;
+    margin-top: 20px;
     padding: 20px 15px;
     width: 580px;
 }
@@ -229,6 +242,7 @@ input#file-upload[type="file"] {
     justify-content: flex-start;
     align-items: center;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .post-data p {
@@ -239,9 +253,8 @@ input#file-upload[type="file"] {
     align-items: center;
 }
 
-.post-data p img {
+.post-data p img{
     width: 30px;
     margin-right: 5px;
 }
-
 
