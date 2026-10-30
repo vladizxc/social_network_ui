@@ -14,10 +14,14 @@ loginFormElement.addEventListener("submit", (event) => {
             'Content-type': 'application/x-www-form-urlencoded',
         }
     }).then((response) => {
+
+        if(response.redirected) {
+            window.location.href= "http://127.0.0.1:5500/html/main-page.html"
+            return
+        }
         console.log("response: ", response)
-        return response.json()
-    }).then((json) => {
-        console.log("json: ", json)
-        window.location.replase(".main-page.html") 
+    }).catch(error => {
+        console.error(error)
     })
+    
 })
