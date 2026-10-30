@@ -7,7 +7,7 @@ loginFormElement.addEventListener("submit", (event) => {
     const paramsToString = params.toString()
 
     fetch(`http://localhost:8080/login`, {
-        method: POST,
+        method: "POST",
         body: params,
         credentials: "include",
         headers: {
