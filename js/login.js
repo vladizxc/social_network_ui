@@ -18,5 +18,6 @@ loginFormElement.addEventListener("submit", (event) => {
         return response.json()
     }).then((json) => {
         console.log("json: ", json)
+        window.location.replase(".main-page.html") 
     })
 })
